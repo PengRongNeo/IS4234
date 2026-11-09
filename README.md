@@ -15,6 +15,10 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000). Synthetic data; investigation/action updates persist in the browser (`localStorage`).
 
+### Netlify
+
+This app is a Next.js static export. The publish directory must be **`out`** (see `netlify.toml`). Do not publish `public` or `.next` — those folders have no site `index.html`. Nested routes such as `/alerts/A003/` are real HTML files, not an SPA fallback.
+
 ## Demonstration scenarios
 
 Use the **Demonstration scenario** control in the header.
